@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Internationally Accredited Certificate in Nutrition</title>
+<style>
+:root{
+  --accent:#16A34A; --accent-dark:#15803D; --accent-soft:#86EFAC; --accent-tint:#DCFCE7;
+  --hero:#0F1A14; --hero-text:#F3FBF6;
+  --bg:#FFFFFF; --text:#14201A; --muted:#5B6B62; --border:#D3DDD7; --panel:#F3F7F5;
+  --star:#C2810B;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0C1511;--text:#E8F2EC;--muted:#9DB0A5;--border:#25352D;--panel:#13201A;--accent-tint:#12301F;}
+}
+:root[data-theme="dark"]{--bg:#0C1511;--text:#E8F2EC;--muted:#9DB0A5;--border:#25352D;--panel:#13201A;--accent-tint:#12301F;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Inter","Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;line-height:1.5;font-size:16px}
+a{color:var(--accent-dark)}
+.hero{background:var(--hero);color:var(--hero-text);padding:32px 0 96px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:40px;align-items:start}
+.hero .wrap{position:relative}
+.main{min-width:0}
+.crumbs{font-size:14px;font-weight:600;color:var(--accent-soft);display:flex;gap:10px;flex-wrap:wrap}
+.crumbs span{color:var(--muted)}
+h1{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:28px 0 12px;font-weight:700}
+.sub{font-size:19px;margin:0 0 26px;color:#CFE3D8}
+.by a{color:var(--accent-soft)}
+.meta{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:#CFE3D8;margin-top:14px}
+.badge-row{display:flex;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-top:-56px;position:relative;z-index:2;max-width:100%}
+.badge-row .prem{background:var(--accent);color:#fff;font-weight:700;padding:16px 26px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:112px}
+.badge-row .txt{padding:16px 22px;flex:1;font-size:15px;border-right:1px solid var(--border)}
+.badge-row .stat{padding:14px 26px;text-align:center;border-right:1px solid var(--border)}
+.badge-row .stat:last-child{border-right:0}
+.stat b{display:block;font-size:24px;line-height:1.1}
+.stat .stars{color:var(--star);font-size:13px;letter-spacing:2px}
+.stat small{color:var(--muted);font-size:14px}
+.stat u{color:var(--muted)}
+.hero-spacer{height:1px}
+.card{position:sticky;top:calc(16px + env(safe-area-inset-top,0px));margin-top:0;background:var(--bg);color:var(--text);border:1px solid var(--border);box-shadow:0 8px 24px rgba(15,26,20,.18);align-self:start;z-index:3}
+.preview{height:190px;background:linear-gradient(135deg,#14532D,#0F1A14);display:flex;align-items:flex-end;justify-content:center;position:relative;color:#fff;font-weight:700;font-size:18px;padding-bottom:18px}
+.preview .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-62%);width:60px;height:60px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}
+.preview .play::after{content:"";border-left:20px solid var(--hero);border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
+.opt{padding:20px 22px;display:flex;gap:14px;align-items:flex-start}
+.radio{width:22px;height:22px;border-radius:50%;border:2px solid var(--muted);flex:none;margin-top:2px}
+.radio.on{border-color:var(--accent);box-shadow:inset 0 0 0 4px var(--bg);background:var(--accent)}
+.opt h4{margin:0;font-size:18px;font-weight:400}
+.price{font-size:28px;font-weight:700}
+.price s{font-size:16px;font-weight:400;color:var(--muted);margin-left:6px}
+.price span{font-size:16px;font-weight:400}
+.urgent{color:#C2261C;font-size:13px;margin-top:2px}
+.perks{list-style:none;margin:0;padding:0 22px 18px 58px;font-size:15px;display:grid;gap:10px}
+.btn{display:block;margin:0 22px 22px;background:var(--accent);color:#fff;border:0;border-radius:4px;font:700 17px/1 inherit;padding:17px;text-align:center;cursor:pointer;width:calc(100% - 44px)}
+.btn:hover{background:var(--accent-dark)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent-soft);outline-offset:2px}
+.split{border-top:1px solid var(--border)}
+.foot{background:var(--panel);border-top:1px solid var(--border);padding:14px 22px;text-align:right;color:var(--muted);font-size:14px}
+.box{border:1px solid var(--border);padding:24px 28px;margin-top:36px}
+h2{font-size:24px;margin:0 0 16px}
+.learn{display:grid;grid-template-columns:1fr 1fr;gap:12px 32px}
+.learn div{display:flex;gap:12px}
+.learn div::before{content:"✓";color:var(--accent);font-weight:700}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin:36px 0 0}
+.tags span{border:1px solid var(--muted);border-radius:6px;padding:12px 20px;font-weight:700;font-size:15px}
+.main h3.sec{font-size:22px;margin:36px 0 14px}
+.inc{display:grid;grid-template-columns:1fr 1fr;gap:12px 32px;font-size:15px}
+.inc div{display:flex;gap:12px}
+.inc div::before{content:"•";color:var(--accent);font-weight:700}
+.chead{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--muted);margin-bottom:10px;gap:12px;flex-wrap:wrap}
+.chead a{font-weight:700;text-decoration:none}
+.list{border:1px solid var(--border)}
+.list div{display:flex;justify-content:space-between;gap:12px;padding:16px 20px;background:var(--panel);border-bottom:1px solid var(--border);font-weight:700}
+.list div:last-child{border-bottom:0}
+.list div span:last-child{font-weight:400;color:var(--muted);white-space:nowrap}
+.list div::before{content:"⌄";color:var(--accent);margin-right:12px;order:-1}
+ul.req{padding-left:22px;margin:0}
+ul.req li{margin:6px 0}
+.desc p{margin:0 0 12px;max-width:68ch}
+.desc .imp{font-weight:700;margin:0 0 16px}
+.desc b{font-weight:700}
+.pillbar{background:var(--accent-tint);border-left:4px solid var(--accent);padding:10px 14px;margin:18px 0}
+@media (max-width:900px){
+  .wrap{grid-template-columns:1fr}
+  .card{position:static;margin-top:28px}
+  .badge-row{flex-wrap:wrap}
+  .badge-row .txt{border-right:0;flex-basis:60%}
+  .learn,.inc{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="main">
+      <div class="crumbs">Health &amp; Fitness <span>›</span> Nutrition &amp; Diet <span>›</span> Nutrition</div>
+      <h1>Internationally Accredited Certificate in Nutrition</h1>
+      <p class="sub">Become a Nutrition Coach: Learn the Fundamentals of Nutrition Science</p>
+      <div class="by">Created by <a href="#">Akash Sehrawat</a>, <a href="#">Fabulous Body</a>, <a href="#">Teaching Assistant</a></div>
+      <div class="meta"><span>Last updated 9/2026</span><span>English</span><span>English [Auto], Italian [Auto], <a href="#" style="color:var(--accent-soft)">1 more</a></span></div>
+    </div>
+    <div></div>
+  </div>
+</header>
+
+<div class="wrap" style="margin-top:-96px">
+  <div class="main">
+    <div style="height:40px"></div>
+    <div class="badge-row" style="margin-top:0">
+      <div class="prem">✔<br>Premium</div>
+      <div class="txt">Access 28,000+ top-rated courses with Udemy <a href="#">Personal Plan</a>.</div>
+      <div class="stat"><b>4.5</b><span class="stars">★★★★½</span><br><u>13,161 ratings</u></div>
+      <div class="stat"><b>67,452</b><small>learners</small></div>
+    </div>
+
+    <section class="box">
+      <h2>What you'll learn</h2>
+      <div class="learn">
+        <div>Understand what the Macronutrients are and the role they play in our bodies</div>
+        <div>Understand the role Micronutrients, Fiber, Probiotics &amp; Water play in our bodies</div>
+        <div>Understand Energy Balance. Figure out easy ways to determine BMR, TDEE</div>
+        <div>Learn the Top Carbohydrates/Proteins/Fat sources and figure out their estimated daily requirements</div>
+      </div>
+    </section>
+
+    <div class="tags"><span>Nutrition</span><span>Nutrition &amp; Diet</span><span>Health &amp; Fitness</span></div>
+
+    <h3 class="sec">This course includes:</h3>
+    <div class="inc">
+      <div>5 hours on-demand video</div><div>24 downloadable resources</div>
+      <div>1 practice test</div><div>Access on mobile and TV</div>
+      <div>Assignments</div><div>Closed captions</div>
+      <div>28 articles</div><div>Certificate of completion</div>
+    </div>
+
+    <h3 class="sec">Course content</h3>
+    <div class="chead"><span>12 sections • 101 lectures • 4h 59m total length</span><a href="#">Expand all sections</a></div>
+    <div class="list">
+      <div><span>Introduction</span><span>2 lectures • 6min</span></div>
+      <div><span>Starters Pack</span><span>12 lectures • 36min</span></div>
+      <div><span>Master Nutrition Manual</span><span>8 lectures • 1min</span></div>
+      <div><span>Module 1: Introduction to Nutrition</span><span>7 lectures • 15min</span></div>
+      <div><span>Module 2: Macronutrients</span><span>9 lectures • 31min</span></div>
+      <div><span>Module 3: Micronutrients</span><span>12 lectures • 49min</span></div>
+    </div>
+
+    <h3 class="sec">Requirements</h3>
+    <ul class="req"><li>Passion for Nutrition</li><li>Willingness to help and motivate others to eat healthy</li></ul>
+
+    <h3 class="sec">Description</h3>
+    <div class="desc">
+      <p class="imp">### IMPORTANT ###</p>
+      <p><b>This Speciality Certificate is Internationally Accredited by the following organizations:</b></p>
+      <p>-NASM (National Academy of Sports Medicine) for 1.9 CEUs</p>
+      <p>-AFAA (Athletic &amp; Fitness Association of America) for 15 CEUs</p>
+      <p>-The CPD Standards for 15 CPD Hours</p>
+      <p>-IOATH (The International Association of Therapists). The IAOTH has approved all our courses. Once you graduate from this course, you can apply to become a member with them as a Therapist.</p>
+      <div class="pillbar"><b>In addition, Fabulous Body Inc. is proudly affiliated with the following:</b></div>
+      <p>-AHHA (American Holistic Health Association). Being Holistic is one of the core values of Fabulous Body. We are proudly affiliated with AHHA as one of their honored members.</p>
+      <p>-ANA (American Nutrition Association). Akash, the course creator and Founder of Fabulous Body Inc., is a professional member of the ANA as he strongly believes in their core principle, i.e., Nutrition is the core element of our health.</p>
+      <p><b>Pass Mark:</b> 70% to secure your Certificate!</p>
+      <p><b>Course Pre-requisite:</b> None</p>
+      <p><b>Course Duration:</b> 2-4 weeks</p>
+      <p><b>Course Lectures:</b> See Below.</p>
+      <p><b>Quizzes &amp; Graded Exam:</b> Graded Exam</p>
+    </div>
+  </div>
+
+  <aside class="card" style="margin-top:0">
+    <div class="preview"><div class="play"></div>Preview this course</div>
+    <div class="opt"><div class="radio on"></div><div><h4>Subscribe and save</h4><div class="price">From $9.00 <s>$10.00</s> <span>/month</span></div></div></div>
+    <ul class="perks"><li>Access to 28,000+ top-rated courses</li><li>Cancel anytime</li><li><a href="#"><b>Learn more</b></a></li></ul>
+    <button class="btn" type="button">Start subscription</button>
+    <div class="split"></div>
+    <div class="opt"><div class="radio"></div><div><h4>Buy individual course</h4><div class="price">$10.99 <s>$59.99</s> <span>82% off</span></div><div class="urgent">23 hours left at this price!</div></div></div>
+    <div class="foot">Gift this course &nbsp; Share</div>
+  </aside>
+</div>
+<div style="height:60px"></div>
+</body>
+</html>
